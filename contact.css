@@ -1,0 +1,212 @@
+
+/*
+   CONTACT US
+ */
+
+.contact-section {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+
+/* Contact Information */
+
+.contact-info {
+    padding: 20px;
+}
+
+.contact-info h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #102a43;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #102a43;
+    border-radius: 50%;
+
+    font-size: 1.3rem;
+}
+
+
+.contact-item h4 {
+    margin: 0 0 5px;
+    color: #102a43;
+    font-weight: 700;
+}
+
+
+.contact-item p {
+    margin: 0;
+    color: #64748b;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.08);
+
+    border: 1px solid #e2e8f0;
+}
+
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #102a43;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 0.95rem;
+
+    transition: 0.3s;
+
+    background: #f8fafc;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color: #66bfbf;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(102, 191, 191, 0.15);
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+
+/* Send Button */
+
+.send-btn {
+
+    border: none;
+
+    background: #66bfbf;
+
+    color: #102a43;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    font-family: "Montserrat", sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.send-btn:hover {
+
+    transform: translateY(-3px);
+
+    background: #102a43;
+
+    color: white;
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.2);
+}
+
+
+/* 
+   CONTACT MOBILE
+ */
+
+@media (max-width: 576px) {
+
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-info {
+        padding: 0;
+    }
+
+    .contact-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .send-btn {
+        width: 100%;
+    }
+
+}
+
