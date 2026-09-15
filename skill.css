@@ -1,111 +1,84 @@
 /* ================= SKILLS ================= */
 
-.skills-section {
-    background-color: #121212;
+.skills {
     padding: 80px 20px;
-}
-
-
-/* Skill Heading */
-
-.skill-title {
     text-align: center;
-    margin-bottom: 50px;
+    background-color: #121212;
+    color: white;
 }
 
-.skill-title h2 {
-    color: white;
+.skills h2 {
     font-size: 40px;
     margin-bottom: 10px;
 }
 
-.skill-title h2 span {
-    color: #66bfbf;
-}
-
-.skill-title p {
+.section-description {
     color: #aaaaaa;
-}
-
-
-/* Skills Container */
-
-.skills-container {
-    max-width: 1100px;
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
+    margin-bottom: 50px;
 }
 
 
 /* Skill Card */
 
 .skill-card {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 30px;
+
     background-color: #1e1e1e;
 
     border: 1px solid #333;
+    border-radius: 12px;
 
-    border-radius: 15px;
-
-    padding: 30px;
-
-    text-align: center;
+    text-align: left;
 
     transition: 0.3s;
 }
 
 
-/* Hover */
+/* Hover Effect */
 
 .skill-card:hover {
-    transform: translateY(-8px);
-
+    transform: translateY(-5px);
     border-color: #66bfbf;
-
-    box-shadow:
-        0 10px 30px rgba(102, 191, 191, 0.15);
 }
 
 
-/* Icon */
+/* Skill Heading */
 
-.skill-icon {
-    font-size: 40px;
+.skill-card h3 {
+    color: #66bfbf;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
 
-/* Skill Name */
-
-.skill-card h3 {
-    color: white;
-    margin-bottom: 10px;
-}
-
-
-/* Description */
+/* Skill Description */
 
 .skill-card p {
-    color: #999;
-    font-size: 14px;
-    line-height: 1.6;
+    color: #cccccc;
+    line-height: 1.7;
 }
 
 
-/* ================= TABLET ================= */
+/* Technology Tags */
 
-@media (max-width: 900px) {
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
 
-    .skills-container {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
+.technologies span {
+    background-color: #333;
+    color: white;
 
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
 }
 
 
@@ -113,20 +86,20 @@
 
 @media (max-width: 600px) {
 
-    .skills-section {
+    .skills {
         padding: 60px 15px;
     }
 
-    .skill-title h2 {
+    .skills h2 {
         font-size: 32px;
     }
 
-    .skills-container {
-        grid-template-columns: 1fr;
+    .skill-card {
+        padding: 22px;
     }
 
-    .skill-card {
-        padding: 25px;
+    .skill-card h3 {
+        font-size: 22px;
     }
 
 }
