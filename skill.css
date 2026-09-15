@@ -1,0 +1,132 @@
+/* ================= SKILLS ================= */
+
+.skills-section {
+    background-color: #121212;
+    padding: 80px 20px;
+}
+
+
+/* Skill Heading */
+
+.skill-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skill-title h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill-title h2 span {
+    color: #66bfbf;
+}
+
+.skill-title p {
+    color: #aaaaaa;
+}
+
+
+/* Skills Container */
+
+.skills-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Skill Card */
+
+.skill-card {
+    background-color: #1e1e1e;
+
+    border: 1px solid #333;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.skill-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #66bfbf;
+
+    box-shadow:
+        0 10px 30px rgba(102, 191, 191, 0.15);
+}
+
+
+/* Icon */
+
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* Skill Name */
+
+.skill-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* Description */
+
+.skill-card p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .skills-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .skills-section {
+        padding: 60px 15px;
+    }
+
+    .skill-title h2 {
+        font-size: 32px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 25px;
+    }
+
+}
