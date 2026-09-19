@@ -2,10 +2,41 @@
 /*
    CONTACT US
  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+}
+
 
 .contact-section {
     padding: 100px 0;
     background: #f8fafc;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background-color: #111;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 
